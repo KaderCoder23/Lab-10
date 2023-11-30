@@ -1,12 +1,14 @@
 import static org.junit.Assert.assertArrayEquals;
 import org.junit.Test;
 
+
+//Abdulkader was here
 public class testSelectionSort {
 
     @Test
     public void testPositive() {
-        int[] arr = { 8, 9, 7, 10, 2 };
-        int[] sortedArr = { 2, 7, 8, 9, 10 };
+        int[] arr = { 5, 4, 3, 2, 1};
+        int[] sortedArr = { 1, 2, 3, 4, 5 };
         SelectionSort selectionSort = new SelectionSort();
         int[] result = selectionSort.basicSelectionSort(arr);
         assertArrayEquals(sortedArr, result);
